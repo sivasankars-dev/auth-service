@@ -2,6 +2,7 @@ from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from app.core.config import settings
 from jose import jwt
+import uuid
 
 pwd_context = CryptContext(
     schemes=["argon2", "bcrypt"],
@@ -21,3 +22,6 @@ def create_access_token(subject: str):
         "exp": expire
     }
     return jwt.encode(payload, settings.JWT_SECRET, algorithm=settings.JWT_ALGORITHM)
+
+def create_refresh_token():
+    return str(uuid.uuid4())

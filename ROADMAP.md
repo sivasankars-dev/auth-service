@@ -19,9 +19,9 @@ designed to match **MAANG-scale production systems**.
 
 ## Phase 2: Security Hardening 🔐
 
-- [ ] Access & refresh token separation
-- [ ] Refresh token rotation
-- [ ] Token revocation strategy
+- [x] Access & refresh token separation
+- [x] Refresh token rotation
+- [x] Token revocation strategy
 - [ ] Rate limiting for auth endpoints
 - [ ] Account lockout after failed attempts
 - [ ] Password strength validation
