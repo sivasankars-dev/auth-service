@@ -22,7 +22,6 @@ This project demonstrates **how MAANG companies actually design auth systems**:
 
 ## 📂 Project Structure
 ```
-```
 auth-service
 ├─ ARCHITECTURE.md
 ├─ DECISIONS.md
